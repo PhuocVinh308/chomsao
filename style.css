@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.app {
+    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 64px;
+    color: #A88BEB;
+    text-shadow: 0, 0, 5px, #ffff;
+}
+
+.sub-title {
+    margin: 60px 0 30px;
+    font-weight: 200;
+    font-size: 20px;
+    color: #fff;
+}
+
+.content-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-select {
+    padding: 12px 150px 12px 16px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: rgba(250, 250, 250, 0.7);
+    cursor: pointer;
+}
+
+.input-select:first-child {
+    margin-right: 8px;
+}
+
+.input-select:last-child {
+    margin-left: 8px;
+}
+
+.input-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-submit {
+    padding: 12px 48px;
+    border-radius: 2px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+
+.input-submit:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.solve p {
+    font-size: 50px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+}
+
+.solve img {
+    position: relative;
+    left: 150px;
+    height: 200px;
+}

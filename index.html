@@ -1,0 +1,216 @@
+<?php
+         $day="";
+         $mon=" ";
+         $name ="";
+         $img="";
+         $result="";
+    if (isset($_POST["day"]) && isset($_POST["month"])){ 
+       $day = $_POST["day"]; 
+      $mon = $_POST["month"];  
+       
+ 
+       if (is_numeric($day) && is_numeric($mon))
+       {
+           switch ($mon){
+            case 1:
+                    if($day<20){
+                      $name ="Ma Kết"; 
+                    $img="https://vansu.net/sites/all/themes/somenh/images/CungMaKet.png";
+                    }
+                    else {
+                        $name="Bảo Bình";
+                        $img ="https://vansu.net/sites/all/themes/somenh/images/CungBaoBinh.png";
+                    }
+                    break;
+            case 2: 
+                  if($day<19){
+                      $name ="Bảo Bình";
+                      $img = "https://vansu.net/sites/all/themes/somenh/images/CungBaoBinh.png";
+                  } 
+                   else 
+                   {
+                       $name="Song Ngư";
+                       $img ="https://vansu.net/sites/all/themes/somenh/images/CungSongNgu.png";
+                   }
+                   break;
+            case 3: 
+                if ($day<21) {
+                    $name="Song Ngư";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungSongNgu.png";
+                }else {
+                    $name="Bạch Dương";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungBachDuong.png";
+                }
+                break;
+            case 4: 
+                if($day<21){
+                    $name="Bạch Dương";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungBachDuong.png";
+                }else{
+                    $name="Kim Ngưu";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungKimNguu.png";
+                } 
+                break;
+            case 5: 
+                if($day<21){
+                    $name="Kim Ngưu";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungKimNguu.png";
+                }else{  $name="Song Tử";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungSongTu.png";}
+                break;
+            case 6: 
+                if($day<22){
+                    $name="Song Tử";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungSongTu.png";
+                }else{
+                    $name="Cự Giải";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungCuGiai.png";
+                }
+                break;
+            case 7: 
+                if($day<23){
+                    $name="Cự Giải";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungCuGiai.png";
+                }
+                else {
+                    $name="Sư Tử";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungSuTu.png";
+                }
+                break;
+            case 8: 
+                if($day<23){
+                    $name="Sư Tử";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungSuTu.png";
+                }else{
+                    $name="Xữ Nữ";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungXuNu.png";
+                }
+                break;
+            case 9: 
+                if($day<23){
+                    $name="Xữ Nữ";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungXuNu.png";
+                }else{
+                    $name="Thiên Bình";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungThienBinh.png";
+                }break;
+            case 10: 
+                if ($day<24)
+                {
+                    $name="Thiên Bình";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungThienBinh.png";
+                }else {
+                    $name="Bò Cạp";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungBoCap.png";
+                }
+                break;
+            case 11: 
+                if($day<23){
+                    $name="Bò Cạp";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungBoCap.png";
+                }else{
+                    $name="Nhân Mã";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungNhanMa.png";
+                }
+                break;
+            case 12: 
+                if($day<22){
+                    $name="Nhân Mã";
+                    $img ="https://vansu.net/sites/all/themes/somenh/images/CungNhanMa.png";
+                } else{
+             
+            $name ="Ma Kết"; 
+            $img="https://vansu.net/sites/all/themes/somenh/images/CungMaKet.png";;
+            
+                } break;
+                 
+                }      
+        }
+    }
+
+    
+ ?>
+    <!DOCTYPE html>
+    <html lang="vn">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Chòm sao</title>
+    </head>
+
+    <body>
+
+        <div class="app">
+            <h1 class="title">Cung Hoàng Đạo</h1>
+            <p class="sub-title">Hãy chọn ngày tháng sinh của bạn trong 2 ô dưới đây. Bạn sẽ biết mình có cung hoàng đạo là gì.</p>
+            <form class="content-input" action="">
+                <div class="content-option">
+                    <select name="" id="" class="input-select">
+                <option value="">Ngày 1</option>
+                <option value="">Ngày 2</option>
+                <option value="">Ngày 3</option>
+                <option value="">Ngày 4</option>
+                <option value="">Ngày 5</option>
+                <option value="">Ngày 6</option>
+                <option value="">Ngày 7</option>
+                <option value="">Ngày 8</option>
+                <option value="">Ngày 9</option>
+                <option value="">Ngày 10</option>
+                <option value="">Ngày 11</option>
+                <option value="">Ngày 12</option>
+                <option value="">Ngày 13</option>
+                <option value="">Ngày 14</option>
+                <option value="">Ngày 15</option>
+                <option value="">Ngày 16</option>
+                <option value="">Ngày 17</option>
+                <option value="">Ngày 18</option>
+                <option value="">Ngày 19</option>
+                <option value="">Ngày 20</option>
+                <option value="">Ngày 21</option>
+                <option value="">Ngày 22</option>
+                <option value="">Ngày 23</option>
+                <option value="">Ngày 24</option>
+                <option value="">Ngày 25</option>
+                <option value="">Ngày 26</option>
+                <option value="">Ngày 27</option>
+                <option value="">Ngày 28</option>
+                <option value="">Ngày 29</option>
+                <option value="">Ngày 30</option>
+                <option value="">Ngày 31</option>
+
+                </select>
+
+                    <select name="" id="" class="input-select">
+                 <option value="">Tháng 1</option>
+                <option value="">Tháng 2</option>
+                <option value="">Tháng 3</option>
+                <option value="">Tháng 4</option>
+                <option value="">Tháng 5</option>
+                <option value="">Tháng 6</option>
+                <option value="">Tháng 7</option>
+                <option value="">Tháng 8</option>
+                <option value="">Tháng 9</option>
+                <option value="">Tháng 10</option>
+                <option value="">Tháng 11</option>
+                <option value="">Tháng 12</option>
+                </select>
+                </div>
+                <div class="input-btn">
+                    <input type="submit" value="Gửi Đi" class="input-submit">
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+
+
+    </body>
+
+    </html>
